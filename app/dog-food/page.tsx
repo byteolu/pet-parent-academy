@@ -15,7 +15,7 @@ export default async function DogTraining() {
       <Header />
        <div className="space-y-5 pb-10">
        <div className="p-8 sm:p-36 lg:p-48 rounded-lg overflow-hidden bg-no-repeat bg-center mt-2" 
-     style={{ backgroundImage: `url(/img/services/cartoon-pup.jpg)`, backgroundSize: '50%' }}>
+     style={{ backgroundImage: `url(/img/services/dog-food.png)`, backgroundSize: '50%' }}>
         </div>
 
 

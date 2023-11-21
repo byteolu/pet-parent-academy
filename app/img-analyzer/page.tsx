@@ -1,4 +1,4 @@
-"use client"
+
 import Container from "@/components/ui/container";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
