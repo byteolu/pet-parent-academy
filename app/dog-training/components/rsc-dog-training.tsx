@@ -6,6 +6,12 @@ import { fetchDogTrainingSessions } from '@/lib/prisma';
 // Fetching and displaying dog training exercises from Prisma DB. 
 
 const prisma = new PrismaClient() 
+interface Exercise {
+  id: number;
+  name: string;
+  instructions?: string;
+}
+
 
 export async function RSCDogTraining() {
   const trainingSessions = await fetchDogTrainingSessions();
@@ -22,12 +28,12 @@ export async function RSCDogTraining() {
 return (
   <Card>
   <main className="mx-auto max-w-6xl">
-    {exercises.map((exercise) => (
+    {exercises.map((exercise: any) => (
       <div key={exercise.id} className="my-4 p-4 shadow-md rounded-lg">
         <h2 className="font-semibold text-5xl">{exercise.name}</h2>
         {exercise.instructions && (
           <ol className="list-decimal list-inside space-y-2 ml-4 mt-4 italic">
-            {exercise.instructions.split('.').map((step, index) => (
+            {exercise.instructions.split('.').map((step: any, index: any) => (
               <li key={index} className="text-lg">
                 {step.trim()}
               </li>
