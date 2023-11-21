@@ -3,6 +3,8 @@ import React from "react";
 import { Card, CardFooter, CardContent } from "@/components/ui/card";
 import { fetchDogTrainingSessions, fetchDogFoodRecipes } from '@/lib/prisma';
 
+
+
 // change exercise to food table when created and run migration on DB
 
 const prisma = new PrismaClient() 
@@ -16,6 +18,8 @@ export async function RSCDogFood() {
 
     await prisma.$disconnect();
 
+
+      
     // Each recipe is wrapped in a 'div' that serves as a card container with tailwinds utlity classes for padding(p-4) , shadow(shadow-md), and rounded corenrs (rounded-lg). 
     // The recipe name is marked up as a heading (<h2>) with a text size (text-5xl) and font weight (font-semibold) classes. 
     // Other details like our 'difficulty' , 'time' and 'ingredients' are marked up as paragraphs (<p>) with text size (text-xl) classes for consistent sizing. 
@@ -25,7 +29,7 @@ export async function RSCDogFood() {
 
     return (
       <div className="mx-auto max-w-6xl mt-5">
-        {food.map((recipe) => (
+        {food.map((recipe: Recipe) => (
           <div key={recipe.id} className="my-4 p-4 shadow-md rounded-lg">
             <h2 className="text-5xl font-semibold">{recipe.name}</h2>
             <h3 className="text-1xl font-semibold mt-4">Difficulty | Time</h3>
