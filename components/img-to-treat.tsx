@@ -81,7 +81,7 @@ export default function ImgToTreatComponent() {
         </div>
       ) : (
         <div className="mb-6 p-8 text-center bg-white rounded-lg shadow-sm">
-          <p className="text-lg">Once you upload an image, you will see it here.</p>
+          <p className="text-lg">Once your Dog, you will see them here.</p>
         </div>
       )}
   
@@ -97,7 +97,7 @@ export default function ImgToTreatComponent() {
   
         <div className='flex justify-center mt-6'>
           <button type="submit" className='px-6 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition duration-200'>
-            Analyze Image
+            Analyze Pup!
           </button>
         </div>
       </form>

@@ -4,7 +4,6 @@ import { PawPrint, ShoppingBag } from 'lucide-react';
 import Container from "@/components/ui/container";
 import { RSCDogFood } from './components/rsc-dog-food';
 import { Card } from '@/components/ui/card';
-import Header from '@/components/Header';
 
 export default async function DogTraining() {
 
@@ -12,7 +11,6 @@ export default async function DogTraining() {
 
  return (
      <Container>
-      <Header />
        <div className="space-y-5 pb-10">
        <div className="p-8 sm:p-36 lg:p-48 rounded-lg overflow-hidden bg-no-repeat bg-center mt-2" 
      style={{ backgroundImage: `url(/img/services/dog-food.png)`, backgroundSize: '50%' }}>

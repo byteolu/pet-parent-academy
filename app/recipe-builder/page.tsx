@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { PawPrint, ShoppingBag } from 'lucide-react';
 import Container  from "@/components/ui/container";
-import  Header from "@/components/Header";
 import ServiceList from '@/components/ServiceList';
 import DogCakeRecipeGenerator from '@/components/DogCakeRecipeGen';
 
@@ -11,7 +10,6 @@ import DogCakeRecipeGenerator from '@/components/DogCakeRecipeGen';
 export default function Home() {
   return (
     <Container>
-       <Header />
       <div className="space-y-5 pb-10">
         <div className="p-4 sm:p-6 lg:p-8 rounded-lg overflow-hidden">
           <div

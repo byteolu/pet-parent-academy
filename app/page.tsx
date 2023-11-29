@@ -1,11 +1,9 @@
 import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { PawPrint, ShoppingBag } from 'lucide-react';
-import Container  from "@/components/ui/container";
-import  Header from "@/components/Header";
 import ServiceList from '@/components/ServiceList';
 import { ClerkProvider, UserButton } from '@clerk/nextjs';
-import DogCakeRecipeGenerator from '@/components/DogCakeRecipeGen';
+import HomeHeroSectionImage from '@/components/ui/Hero-Sections/HomeHero-Sec';
 
 
 const services = [
@@ -48,32 +46,15 @@ const services = [
 
 export default function Home() {
   return (
-    <Container>
-       <Header />
-       <UserButton />
-      <div className="space-y-5 pb-10">
-        <div className="p-4 sm:p-6 lg:p-8 rounded-lg overflow-hidden">
-          <div
-            style={{ backgroundImage: `url(/img/services/hero-img.png)` }}
-            className="rounded-lg relative aspect-square md:aspect-[8.4/6] overflow-hidden bg-cover"
-          >
-          </div>
-        </div>
-        <div className="pt-2 pb-4 pr-4 pl-4 flex flex-col w-full sm:w-auto justify-center items-center text-center gap-y-4 flex-wrap">
-              <div className="font-bold text-2xl sm:text-4xl lg:text-5xl sm:max-w-xl max-w-xs text-black dark:text-white bg-secondary/60 p-2 rounded-lg">
-              Discover Healthy Dog Recipes
-                <Button size="lg" className="w-full py-4 text-lg">
-                  <PawPrint className="mr-2" />
-                  Get Recipes
-                </Button>
-              </div>
-            </div>
+<div>     
+      <HomeHeroSectionImage />
+    
           <div className="service-card w-3/4 mx-auto p-4 shadow-sm rounded-lg text-xl">
           <ServiceList items={services} />
           
               </div>
               </div>
-    </Container>
+
   );
 }
 

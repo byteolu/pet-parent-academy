@@ -25,7 +25,7 @@ export async function POST(request: Request) {
                 role: "user",
                 //@ts-ignore
                 content: [
-                    { type: "text", text: "Create Dog-friendly Treat recipes based on the image.List any nutritional benefits or dietary restrictions for canines." },
+                    { type: "text", text: "Analyze the Image , give a summary of the ingredients, is it healthy ? " },
                     {       // Whats in the image? Explain
                         type: "image_url",
                         image_url: image // base64 images 
