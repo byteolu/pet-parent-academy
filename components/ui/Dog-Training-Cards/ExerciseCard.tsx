@@ -16,7 +16,7 @@ const IMAGE =
   
 
 
-export default function ExerciseCard() {
+export default function ExerciseCardComp() {
   return (
     <Center py={12}>
       <Box

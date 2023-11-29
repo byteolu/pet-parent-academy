@@ -37,8 +37,3 @@ export default async function DogTraining() {
  );
 }
 
-// <Button size="lg" className="w-full py-4 text-lg">
-   //            <PawPrint className="mr-2" />
-     //          Lesson: 1 - Sit
-       //      </Button>
-
