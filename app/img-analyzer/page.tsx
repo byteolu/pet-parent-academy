@@ -1,5 +1,5 @@
 
-import HeroSection from "@/components/ui/Hero-Sections/HeroSection-CTA";
+import HeroSection from "@/components/ui/Hero-Sections/HeroSection-CTA-blog";
 import ImgToTreatComponent from "@/components/img-to-treat";
 
 
