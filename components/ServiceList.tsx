@@ -1,5 +1,5 @@
-import ServiceCard from "@/components/ui/ServiceCard";
-import { Service } from "@/types";
+import ServiceCard from "../components/ui/ServiceCard";
+import { Service } from "../types";
 
 interface ServiceListProps {
   items: Service[];
