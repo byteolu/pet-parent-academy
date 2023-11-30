@@ -1,8 +1,4 @@
-import Image from 'next/image';
-import { Button } from "@/components/ui/button";
-import { PawPrint, ShoppingBag } from 'lucide-react';
 import Container  from "@/components/ui/container";
-import ServiceList from '@/components/ServiceList';
 import DogCakeRecipeGenerator from '@/components/DogCakeRecipeGen';
 
 
